@@ -19,6 +19,7 @@ body {
     background-image: url('package.png'); /* Replace with your package image */
     background-size: cover;
     cursor: pointer;
+    background-image: url('animals_package.png'); /* Update with your new image path */
 }
 
 .buttons {
