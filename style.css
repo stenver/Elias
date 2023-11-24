@@ -12,6 +12,15 @@ body {
     padding: 20px;
 }
 
+.title {
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* This is just an example, you can choose any font */
+    text-align: center;
+    font-size: 36px;
+    color: #FF69B4; /* Bright pink color; feel free to choose your own */
+    margin-top: 20px;
+    text-shadow: 2px 2px 4px #000000; /* Adding a slight shadow for a popping effect */
+}
+
 .package {
     width: 300px;
     height: 300px;
