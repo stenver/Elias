@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f8ff; /* Light blue background */
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.package {
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    background-image: url('package.png'); /* Replace with your package image */
+    background-size: cover;
+    cursor: pointer;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+.show {
+    display: block;
+}
