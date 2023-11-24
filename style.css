@@ -16,10 +16,9 @@ body {
     width: 300px;
     height: 300px;
     margin: 0 auto;
-    background-image: url('package.png'); /* Replace with your package image */
+    background-image: url('dc1242d7-ebac-49fb-b838-1788ce365752.webp'); /* Update with your new image path */
     background-size: cover;
     cursor: pointer;
-    background-image: url('dc1242d7-ebac-49fb-b838-1788ce365752.webp'); /* Update with your new image path */
 }
 
 .buttons {
