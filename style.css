@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    background-color: #f0f8ff; /* Light blue background */
+    background: linear-gradient(to bottom, #c9e4f6, #f0f8ff); /* Light blue gradient */
 }
 
 .container {
@@ -10,15 +12,36 @@ body {
     max-width: 600px;
     margin: 0 auto;
     padding: 20px;
+    width: 90%;
+    padding: 20px;
+    background-color: #ffffff; /* White background for the content area */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow around the content area */
+    border-radius: 15px; /* Rounded corners for the content box */
+    padding: 20px; /* Space inside the content box */
+    margin-top: 40px; /* Space above the content box */
+    margin-bottom: 40px; /* Space below the content box */
 }
 
 .title {
-    font-family: 'Comic Sans MS', cursive, sans-serif; /* This is just an example, you can choose any font */
+    font-family: 'Indie Flower', cursive; /* This is a playful font from Google Fonts */
     text-align: center;
     font-size: 36px;
     color: #FF69B4; /* Bright pink color; feel free to choose your own */
     margin-top: 20px;
     text-shadow: 2px 2px 4px #000000; /* Adding a slight shadow for a popping effect */
+    margin-top: 40px; /* Adjust as needed */
+    padding-top: 20px; /* Adjust as needed */
+}
+
+.button:hover {
+    transform: scale(1.05); /* Slightly enlarges the button */
+    background-color: #5CB85C; /* Slightly darker shade when hovered */
+}
+
+.button {
+    /* existing styles */
+    min-width: 100px; /* Minimum width for easy clickability */
+    font-size: 18px; /* Larger font size for readability */
 }
 
 .package {
@@ -47,10 +70,39 @@ body {
     cursor: pointer;
 }
 
+@keyframes openPackage {
+    from {
+        transform: scale(0.9);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+#openedPackage.show {
+    animation: openPackage 0.3s ease-in-out forwards;
+}
+
 .hidden {
     display: none;
 }
 
 .show {
     display: block;
+}
+
+/* Responsive media query for smaller screens */
+@media (max-width: 768px) {
+    .title {
+        font-size: 24px; /* Smaller font size for small screens */
+    }
+    .package {
+        width: 80%; /* Larger relative width on small screens */
+    }
+}
+@media (max-width: 768px) {
+    .container {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
 }
